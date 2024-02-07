@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>group info</title>
+
+</head>
+
+<body>
+
+
+
+    <form id="regForm" action="mailto:samsylvester09@gmail.com" method="post" enctype="text/plain">
+
+
+
+        <h1>Register:</h1>
+
+
+
+        <!-- One "tab" for each step in the form: -->
+
+        <div class="tab">
+
+            <div id="questions-btn">
+                <h3>Are you a:</h3>
+                <p><button type="button" class="occupation" id="frontend-btn" name="F-Developer">
+                        Frontend Developer</button></p>
+                <p><button type="button" class="occupation" id="backend-btn" name="B-Developer">
+                        Backend developer</button></p>
+                <p><button type="button" class="occupation" id="designer-btn" name="UIUX-Designer">
+                        UIUX designer</button></p>
+                <p><button type="button" class="occupation" id="manager-btn" name="P-Manager">
+                        Project manager</button></p>
+            </div>
+
+            <div id="questions">
+            </div>
+        </div>
+
+
+        <div style="overflow:auto;">
+
+            <div style="float:right;">
+
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+
+                <button type="submit" id="submitBtn">Submit</button>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Circles which indicates the steps of the form: -->
+
+        <div style="text-align:center;margin-top:40px;">
+
+            <span class="step"></span>
+
+            <span class="step"></span>
+
+            <span class="step"></span>
+
+            <span class="step"></span>
+
+            <span class="step"></span>
+
+        </div>
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
